@@ -1,0 +1,37 @@
+Table Producto {
+    id_producto integer [primary key, not null]
+    nombre varchar(100) [not null]
+    categoria varchar(50) [not null]
+    marca varchar(50) [not null]
+    presentacion varchar(50)
+    precio int [not null]
+    id_proveedor integer [not null, ref: > Proveedor.id_proveedor]
+}
+nombre, categoria, marca, presentacion, precio
+
+("Aguila","Cerveza","Bavaria","Botella",4500)
+("Aguila Light","Cerveza","Bavaria","Lata",4700)
+("Club Colombia","Cerveza","Bavaria","Botella",5200)
+("Club Colombia Roja","Cerveza","Bavaria","Lata",5400)
+("Club Colombia Negra","Cerveza","Bavaria","Botella",5500)
+("Poker","Cerveza","Bavaria","Botella",4300)
+("Poker","Cerveza","Bavaria","Lata",4500)
+("Costeña","Cerveza","Bavaria","Botella",4200)
+("Costeña","Cerveza","Bavaria","Lata",4400)
+("Pilsen","Cerveza","Bavaria","Botella",4100)
+("Pilsen","Cerveza","Bavaria","Lata",4300)
+("Redd's","Cerveza","Bavaria","Botella",4800)
+("Redd's","Cerveza","Bavaria","Lata",5000)
+("Aguila Cero","Cerveza","Bavaria","Botella",4600)
+("Aguila Cero","Cerveza","Bavaria","Lata",4800)
+("Club Colombia Dorada","Cerveza","Bavaria","Botella",5300)
+("Club Colombia Dorada","Cerveza","Bavaria","Lata",5500)
+("Poker Radler","Cerveza","Bavaria","Botella",4700)
+("Poker Radler","Cerveza","Bavaria","Lata",4900)
+("Costeña Bacana","Cerveza","Bavaria","Botella",4400)
+("Costeña Bacana","Cerveza","Bavaria","Lata",4600)
+("Aguila Original","Cerveza","Bavaria","Botella",4500)
+("Aguila Original","Cerveza","Bavaria","Lata",4700)
+("Club Colombia Trigo","Cerveza","Bavaria","Botella",5600)
+("Club Colombia Trigo","Cerveza","Bavaria","Lata",5800)
+
